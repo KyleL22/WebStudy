@@ -9,16 +9,17 @@
 
 </head>
 <body>
+	<h3>1에서 얼마나 더해야 3000을 넘기는가 ??</h3>
 	<script>
-		for(var size=10; size<=75; size+=5){ //5씩증가
-			document.write("<span ");
-			document.write("style = 'font-size:"+size+"px'>");
-			document.write(size+"px");
-			document.write("</span>");
+		var i=0,  sum=0;
+		while(true){
+			sum += i;
+			if (sum>3000)
+				break;
+			i++;
 		}
-
-
-
+	document.write(i+"까지 더하면 3000을 넘음 : "+sum);
+	
 	</script>
 </body>
 </html>
