@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	@media screen and (max-width:767px) {
+		#wrap {background-color: red;color :aliceblue;}
+		.nav {    padding: 30px 40px;  }
+		#menu {    display: none;  }
+		.fab {    display : none;  }
+		.fas {    font-size: 2em;  }
+
+	}
+	@media screen and (min-width:768px) and (max-width:959px) {
+		#wrap {background-color: blue; color :aliceblue;}
+	}
+	@media screen and (min-width:960px) {
+		#wrap {background-color: green;color :aliceblue;}
+		#menu {    display: flex;  }
+		#menu > li {    padding: 20px 30px;    font-size: 20px;  }
+		li > a {    color: white;  }
+		.fab {    font-size: 35px;    color: #1DA1F2;  }
+		.fas {    display: none;  }
+	}
+	*{margin:0; padding: 0 ;}
+	a{text-decoration: none;}
+	li{list-style: none;}
+	.hbody{
+		background-color: black;
+		width: 100%;
+		height:100px;
+	}
+
+
+	#wrap{width:80%; margin: 0 auto;}
+	#header{border: 1px solid #ccc; height: 100px;}
+	#header>h1{text-align: center;}
+
+	#nav{display:flex; justify-content: space-between; border:1px solid #ccc}	
+	#nav ul{overflow: hidden;}
+	#nav ul li{float: left; padding: 5px 30px; text-align: center;
+			   height: 60px;line-height: 60px; border: 1px solid #ccc;}
+	
+	#content_wrap{border:1px solid #ccc}
+	#content_wrap #content { padding: 10px;}
+	#contetn_wrap #content >h2 {border-bottom: 1px solid #ccc; margin-bottom: 10px;}
+
+	#footer{height: 100px;line-height: 100px;text-align: center;font-size: 1.5em;
+			font-weight: bold; margin: 0 auto;border: 1px solid #ccc;}
+</style>
+<body>
+	<div id="wrap">
+		<div id="'header"><h1>HEADER</h1></div>
+		<section class="hbody" id="nav">
+			<ul>
+				<li>menu</li>
+				<li>menu</li>
+				<li>menu</li>
+				<li>menu</li>
+			</ul>
+		</div>
+
+		<div id="content_wrap">
+			<div id="content">
+				<h2>애국가</h2>
+				<p>
+					1절<br>
+					동해물과백두산이마르고닳도록<br>
+					하느님이보우하사우리나라만세<br>
+				</p>
+				<p>
+					2절 남산 위에 저 소나무 철갑을 두른 듯<br>
+					바람 서리 불변함음 우리 기상일세<br />
+					무궁화 삼천리 화려 강산 <br>
+					대한 사람 대한으로 길이 보전하세
+				</p>
+				<p>
+					3절 가을 하늘 공활한데 높고 구름 없이 <br>
+					밝은 달은 우리 가슴 일편단심일세<br />
+					무궁화 삼천리 화려 강산 <br>
+					대한 사람 대한으로 길이 보전하세
+				</p>
+				<p>
+					4절 이 기상과 이 맘으로 충성을 다하여 <br>
+					괴로우나 즐거우나 나라 사랑하세<br />
+					무궁화 삼천리 화려 강산 <br>
+					대한 사람 대한으로 길이 보전하세
+				</p>
+			</div>
+		</div>
+		<div id="footer">
+			대한민국
+		</div>
+	</div>
+</body>
+</html>

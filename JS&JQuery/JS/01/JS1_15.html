@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+
+</head>
+<body>
+	<h3>자바스크립트</h3>
+	<hr>
+	<script>
+		document.write("abc"+23+"<br>");
+		
+		document.write(23+"abc"+"<br>");
+
+		document.write(23+"35"+"<br>");
+		// " " 안의 숫자는 문자열 취급
+		document.write(23+35+"<br>");
+
+		document.write(23+35+"abc"+"<br>");
+		// 정수가 계산된뒤 문자열취급되어 문자열 앞에 붙음
+		document.write("abc"+23+35+"<br><hr>"); 
+		// 연산시 맨 앞이 문자열일 경우 뒤의 값도 문자열 취급 
+
+		var name ="전우치"; // 문자열 끼리의 선/후 비교 
+		document.write(name =="전우치");
+		document.write("<br>");
+		document.write(name > "홍길동");
+
+	</script>
+	
+		
+</body>
+</html>

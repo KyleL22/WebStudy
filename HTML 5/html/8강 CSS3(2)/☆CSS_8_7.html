@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		h3~div{
+			font-size:10px;
+			color:orange;
+		}
+		h3+div{
+			font-size: 20px;
+			font-weight: bold			;
+			color: rgb(49, 172, 194);
+		}
+		#title~div{
+			width: 300px;
+			background-color: yellow;
+		}
+		.hoverSel:hover{
+			font-size: 2em;
+			color: #f00;
+			font-weight: bolder;
+		}
+		input:checked{
+			font-size: 2em;
+			background: #ffffff;
+		}
+		input{
+			font-size: 1em;
+			background: #ffffff;
+		}
+		input:focus{
+			font-size: 2em;
+			background: #dddddd;
+		}
+	</style>
+</head>
+<body>
+	<!-- 동위 선택ㅈㅏ -->
+	<h3 id="title">동위선택자(+,~)</h3>
+	<div>div_1</div>
+	<div>div_2</div>
+	<div>div_3</div>
+	<div>div_4</div>
+	<div>div_5</div>
+
+	<br>
+	<!-- 반응 선택자 	-->
+	<div class="hoverSel">반응선택자</div>
+
+	<br/>
+	<!--상태 선택자-->
+	<div>
+		아이디:<input type='text'>
+	</div>
+
+</body>
+
+</html>
+</html>

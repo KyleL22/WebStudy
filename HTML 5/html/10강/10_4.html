@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+	body{
+		margin: 0 ;
+		background-color: #ddd;
+	}
+	div{
+		width: 200px;
+		height: 200px;
+		margin: 10px;
+		padding: 10px;
+		border: 10px  #ff8d00;
+		border-radius: 10pt 20pt 30pt 40pt;
+	}
+	div:nth-child(1)	{
+		margin: 0;
+		border: 0;	
+		padding: 0 ;
+		background-color: #f00;
+	}
+	/* width 값을 border, padding을 합한 값으로 사용한 컨텐츠 값 줄어듦	*/
+	div:nth-child(2){
+		background-color: beige;
+		box-sizing: border-box;
+	}
+
+	div:nth-child(3){
+		background-color: #0000f0;
+		box-sizing: content-box;
+	}
+		
+	</style>
+</head>
+<body style="background: #fff;">
+	<div>200*200</div>
+	<div>200*200</div>
+	<div>200*200</div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trasition</title>
+	<style>
+		#wrap .rec {width: 100px;
+			height: 200px;
+			background-color: #ff0000;
+			transition-duration: 3s;			
+			}
+		#wrap .rec:hover{
+			width: 200px;
+			height: 100px;
+			background-color: #0f0;
+		}
+		ul{ list-style: none;}
+		/*
+		.gnb : Global Navigation Bar -> 로그인, 언어 등을 포함하는 최상단 메뉴
+		.lnb : Local Navigation Bar -> 메인메뉴
+		.snb : Side Navigation Bar -> 서브메뉴 
+		*/
+		#nav { }
+		#nav #gnb { }
+		#nav #gnb ul { overflow: hidden;}
+		#nav #gnb ul li {float: left; width: 100px; height: 50px;
+						margin-right: 5px; text-align: center; background-color: #a0b03b;
+						transition-property: background-color, height;
+						transition-duration: 5s, 2s;
+		}
+
+		#nav #gnb ul li:nth-child(1){transition-duration: 2s;}
+		#nav #gnb ul li:nth-child(2){transition-timing-function: ease-in;}
+		#nav #gnb ul li:nth-child(3){transition-timing-function: ease-out;}
+		#nav #gnb ul li:nth-child(4){transition-property: backbround-color, height;}
+
+		#nav #gnb ul li:nth-child(1):hover{height: 250px; background-color: #353a17; color: #fff;}
+		#nav #gnb ul li:nth-child(2):hover{height: 250px;background-color: #173bc7; color: #fff;}
+		#nav #gnb ul li:nth-child(3):hover{height: 250px;background-color: #17173b; color: #fff;}
+		#nav #gnb ul li:nth-child(4):hover{height: 250px;background-color: #a7b839; color: #fff;}
+		#nav #gnb ul li:nth-child(5):hover{height: 250px;background-color: #3bf0ff; color: #fff;}
+	</style>
+</head>
+<body>
+	<div id ="wrap">
+		<div class="rec"></div>
+	</div>
+	<div id="nav">
+		<div id="gnb">
+			<ul>
+				<li>1</li>
+				<li>1</li>
+				<li>1</li>
+				<li>1</li>
+				<li>1</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

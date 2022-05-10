@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#header {
+			width: 500px;
+			background-color: aquamarine;
+			border: 1px solid #808080;
+			text-align: center;
+		}
+		#wrap{
+			width: 500px;
+			background-color: #66dbf6;
+			border: 2px solid #808080;
+			text-align: center;
+			overflow: hidden;
+		}
+		#content{
+			width: 350;
+			border: 1px solid red;
+			float: left;
+		}
+		#side_banner{
+			border: 1px solid red;
+			float: center;
+		}
+		#footer	{
+			clear:both;
+			width: 500px			;
+			background-color: #ffd800;
+			border: 3px solid #808080;
+			text-align: center;
+		}
+		.menu1{
+			color: #1822e2;
+			font-weight: bold;
+		}
+		.menu2{
+			font-size: 20px;
+		}
+		ul li.menu{
+			font-size: 20px;
+			color: rgb(209, 110, 209);
+		}
+	</style>
+</head>
+<body>
+	<div id ="header">
+		<h1>My HomePage</h1>
+	</div>
+
+	<div id ="wrap">
+		<div id=""content">
+			<h1>content</h1>
+			<ul>
+				<li class="menu">menu1</li>
+				<li class="menu2">menu2</li>
+				<li class="menu">menu3</li>
+				<li class="menu2">menu4</li>
+				<li class="menu">menu5</li>
+			</ul>
+			<ol>
+				<li class="menu">menu1</li>
+				<li class="menu2">menu2</li>
+				<li class="menu">menu3</li>
+				<li>menu4</li>
+				<li class="menu">menu5</li>
+
+			</ol>
+		</div>
+
+		<div id="side_banner">
+			<h1>BANNER</h1>
+			<a href ="http://www.sba.seoul.kr" target="_blank">
+				<img src="https://www.sba.seoul.kr/img/common/logo.png"">				
+			</a>
+		</div>
+	</div>
+	<div id = "footer">
+		<h1>FOOTER</h1>
+	</div>	
+
+</body>
+</html>
